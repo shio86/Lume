@@ -409,6 +409,49 @@
 		opacity: .5;
 	}
 
+	/* 電腦 1401px */
+	@media (min-width: 1401px) {}
+
+	/* 電腦 (993-) 1400px */
+	@media (max-width: 1400px) {}
+
+	/* 平板 (576-) 992px */
+	@media (max-width: 992px) {
+		#anchor{
+			width: 90%;
+		}
+		#anchor span{
+			width: 80px;
+			margin: 0 50px;
+		}
+	}
+
+	/* 小型手機 576px 以下 */
+	@media (max-width: 576px) {
+		#anchor{
+			flex-direction: column;
+		}
+
+		#anchor>img{
+			margin: 0px 0px 20px 0px ;
+			display: none;
+		}
+
+		#anchor span{
+			width: 1px;
+			height: 60px;
+			margin: 20px 0;
+		}
+
+		#anchor .buttom a{
+			margin: 0 20px;
+		}
+
+		#anchor .buttom a h2{
+			font-size: 16px;
+		}
+	}
+
 	/* 標題漸層 */
 	.title-gradient {
 		position: absolute;
@@ -433,9 +476,6 @@
 	#cover {
 		display: flex;
 		justify-content: center;
-
-		margin-left: 72px;
-		margin-right: 144px;
 	}
 
 	.cover-logo {
@@ -449,7 +489,7 @@
 	/* LOGO */
 	.cover-logo>img {
 		margin-top: 70px;
-		width: 200px;
+		/* width: 200px; */
 		z-index: 1;
 	}
 
@@ -505,8 +545,8 @@
 		align-items: flex-start;
 
 		position: absolute;
-		right:-70px;
-		top:180px;
+		right: -70px;
+		top: 180px;
 		z-index: 1;
 	}
 
@@ -517,8 +557,12 @@
 
 	/* 電腦 1401px */
 	@media (min-width: 1401px) {
-		.cover-banner{
+		.cover-banner {
 			height: 742px;
+		}
+
+		.cover-logo>img {
+			width: 200px;
 		}
 	}
 
@@ -527,31 +571,31 @@
 
 	/* 平板 (576-) 992px */
 	@media (max-width: 992px) {
-		#cover{
+		#cover {
 			position: relative;
 			margin: 0;
 		}
-		.cover-logo{
+
+		.cover-logo {
 			position: absolute;
 			z-index: 1;
-			left:55px;
-			top: 0px;
+			left: 55px;
 			height: 100%;
 		}
 
-		.cover-logo>img{
+		.cover-logo>img {
 			margin-top: 50px;
 		}
 
-		.cover-logo>div{
+		.cover-logo>div {
 			margin-bottom: 0;
 		}
 
-		.cover-quotes{
+		.cover-quotes {
 			display: none;
 		}
 
-		.cover-banner{
+		.cover-banner {
 			width: 100%;
 			aspect-ratio: 1 / 1;
 		}
@@ -559,6 +603,22 @@
 
 	/* 小型手機 576px 以下 */
 	@media (max-width: 576px) {
+		.cover-logo {
+			left: 30px;
+			top: -10px;
+		}
+
+		.cover-logo>img {
+			width: 100px;
+		}
+
+		.cover-logo div {
+			width: 150px;
+		}
+
+		.cover-logo div p {
+			font-size: 10px;
+		}
 	}
 
 	/* 介紹文字 */
@@ -645,7 +705,7 @@
 	}
 
 	#introduce p {
-		width: 385px;
+		width: 400px;
 		margin-top: 65px;
 	}
 
@@ -657,6 +717,51 @@
 		z-index: 10;
 	}
 
+	/* 電腦 1401px */
+	@media (min-width: 1401px) {}
+
+	/* 電腦 (993-) 1400px */
+	@media (max-width: 1400px) {}
+
+	/* 平板 (576-) 992px */
+	@media (max-width: 992px) {
+		#introduce{
+			flex-direction: column;
+			width: 80%;
+			background-position: center;
+			margin-top: 100px;
+		}
+
+		#introduce .left{
+			width: 400px;
+			margin: 50px auto;
+		}
+
+		#introduce .left span{
+			width: 100%;
+		}
+		#introduce .right{
+			margin: 0 auto;
+		}
+	}
+
+	/* 小型手機 576px 以下 */
+	@media (max-width: 576px) {
+		#introduce .left .top h1{
+			font-size: 30px;
+			margin: 30px 0;
+		}
+
+		#introduce .left{
+			width: 70%;
+		}
+
+		#introduce .left .bottom p{
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
+
 	/* 輪播圖片 */
 	#carousel {
 		background: var(--gradient3);
@@ -666,49 +771,49 @@
 		position: relative;
 	}
 
-	#carousel>img{
+	#carousel>img {
 		position: absolute;
 		width: 100%;
 	}
 
-	#carousel .gradient-line-1{
+	#carousel .gradient-line-1 {
 		top: -270px;
 	}
 
-	#carousel .gradient-line-2{
+	#carousel .gradient-line-2 {
 		bottom: -270px;
 		transform: rotate(180deg);
 	}
 
-	#carousel .star-w-1{
+	#carousel .star-w-1 {
 		opacity: 0.4;
 		left: 2vw;
 		top: 2vw;
 		width: 6vw;
 	}
 
-	#carousel .star-w-2{
+	#carousel .star-w-2 {
 		opacity: 0.4;
 		left: 8vw;
 		top: 6vw;
 		width: 3vw;
 	}
 
-	#carousel .star-w-3{
+	#carousel .star-w-3 {
 		opacity: 0.4;
 		right: 2vw;
 		top: 15vw;
 		width: 9vw;
 	}
 
-	#carousel .star-w-4{
+	#carousel .star-w-4 {
 		opacity: 0.4;
 		right: 30vw;
 		bottom: 1vw;
 		width: 4vw;
 	}
 
-	#carousel .star-w-5{
+	#carousel .star-w-5 {
 		opacity: 0.4;
 		left: 3vw;
 		bottom: -1vw;
@@ -735,8 +840,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		position: relative;	
-		z-index:99;
+		position: relative;
+		z-index: 99;
 	}
 
 	#carousel .title h1 {
@@ -758,8 +863,8 @@
 		margin-top: 130px;
 		overflow: hidden;
 
-		position: relative;	
-		z-index:99;
+		position: relative;
+		z-index: 99;
 	}
 
 	#carousel .img img {
@@ -768,6 +873,77 @@
 		object-fit: cover;
 		border-radius: 0 100px 0 100px;
 		margin: 0 20px;
+	}
+
+	/* 電腦 1401px */
+	@media (min-width: 1401px) {}
+
+	/* 電腦 (993-) 1400px */
+	@media (max-width: 1400px) {}
+
+	/* 平板 (576-) 992px */
+	@media (max-width: 992px) {
+		.corner-1{
+			margin-top: -200px;
+		}
+
+		#carousel{
+			padding-bottom: 80px;
+		}
+
+		#carousel .title{
+			width: 70%;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		#carousel .title h1 img{
+			left: 50%;
+			transform: translate(-50%,0);
+			top: -80px;
+			width: 30px;
+			/* display: none; */
+		}
+
+		#carousel .title h2{
+			line-height: 1.5em;
+		}
+
+		#carousel .img{
+			margin-top: 50px;
+		}
+
+		#carousel .img img{
+			width: 200px;
+			height: 200px;
+			border-radius: 0 50px 0 50px;
+			margin: 0 10px;
+		}
+
+		.corner-2{
+			margin-bottom: 0px;
+		}
+	}
+
+	/* 小型手機 576px 以下 */
+	@media (max-width: 576px) {
+		.corner-1{
+			margin-top: -130px;
+		}
+
+		#carousel .title h1{
+			font-size: 22px;
+		}
+
+		#carousel .title h2{
+			font-size: 16px;
+		}
+
+		.corner-2{
+			margin-bottom: 50px;
+		}
+
+
 	}
 
 	/* 商品 */
@@ -814,17 +990,21 @@
 
 	#product .index-product-left .text div {
 		margin-top: 80px;
-		position: relative;
+		/* position: relative; */
 	}
 
 	#product .index-product-left .text div h2 {
 		margin-bottom: 20px;
 	}
 
+	#product .index-product-left .text div h1{
+		position: relative;
+	}
+
 	#product .index-product-left .text div img {
 		position: absolute;
 		right: -145px;
-		top: -20px;
+		top: -80px;
 		width: 300px;
 		height: 200px;
 		rotate: -20deg;
@@ -860,23 +1040,129 @@
 
 	#product .index-product-right .text div {
 		margin-top: 80px;
-		position: relative;
+		/* position: relative; */
 	}
 
 	#product .index-product-right .text div h2 {
 		margin-bottom: 20px;
 	}
 
+	#product .index-product-right .text div h1{
+		position: relative;
+	}
+
 	#product .index-product-right .text div img {
 		position: absolute;
 		left: -145px;
-		top: -20px;
+		top: -80px;
 		width: 300px;
 		height: 200px;
 		rotate: 200deg;
 		z-index: -1;
 	}
 
+	/* 電腦 1401px */
+	@media (min-width: 1401px) {}
+
+	/* 電腦 (993-) 1400px */
+	@media (max-width: 1400px) {}
+
+	/* 平板 (576-) 992px */
+	@media (max-width: 992px) {
+		#product{
+			margin: 0 0 80px 0;
+		}
+
+		#product .index-product-left,#product .index-product-right{
+			width: 90%;
+			height: 400px;
+		}
+
+		#product .index-product-left .img,#product .index-product-right .img{
+			width: 50%;
+			height: 100%;
+		}
+
+		#product .index-product-left .img p,#product .index-product-right .img p{
+			font-size: 170px;
+		}
+
+		#product .index-product-left .text>div,#product .index-product-right .text>div{
+			margin-top: 0px;
+		}
+	}
+
+	/* 小型手機 576px 以下 */
+	@media (max-width: 576px) {
+		#product .index-product-left,#product .index-product-right{
+			width: 80%;
+			flex-direction: column;
+			align-items: center;
+			height: 500px;
+			padding: 70px 0;
+		}
+
+		#product .index-product-right .img{
+			order: -1;
+		}
+
+		#product .index-product-left .img,#product .index-product-right .img{
+			width: 100%;
+			height: 100%;
+			/* border-radius: 20px; */
+		}
+
+		#product .index-product-left .img p,#product .index-product-right .img p{
+			font-size: 100px;
+			/* text-align: right; */
+		}
+
+		#product .index-product-left .text,#product .index-product-right .text{
+			align-items: center;
+			text-align: center;
+			margin-top: 50px;
+			width: 100%;
+			position: relative;
+		}
+
+		#product .index-product-left .text>div,#product .index-product-right .text>div{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		#product .index-product-left .text>div h2,#product .index-product-right .text>div h2{
+			order: 1;
+			margin: 0;
+		}
+
+		#product .index-product-left .text>div h1,#product .index-product-right .text>div h1{
+			font-size: 40px;
+		}
+
+		#product .index-product-left .text>div h1 img,#product .index-product-right .text>div h1 img{
+			rotate: 200deg;
+			width: 200px;
+			height: 120px;
+			top: -40px;
+			right: 0;
+			bottom: 0;
+			left: -110px;
+		}
+
+		#product .index-product-left .text>div::after,#product .index-product-right .text>div::after{
+			content: "";
+			display: block;
+			height: 1px;
+			width:60px;
+			background-color: #000;
+		}
+
+		#product .index-product-left .text p,#product .index-product-right .text p{
+			margin: 50px 0;
+		}
+	}
 
 	/* 商品圖片 */
 	#index-perfume .img {
@@ -896,7 +1182,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 1040px;
+		width: calc(1140px - 80px);
 		padding: 40px;
 		margin: 80px auto;
 		border-radius: 80px 0 80px 0;
@@ -928,12 +1214,59 @@
 		align-self: flex-end;
 	}
 
+		/* 電腦 1401px */
+		@media (min-width: 1401px) {}
+
+		/* 電腦 (993-) 1400px */
+		@media (max-width: 1400px) {}
+	
+		/* 平板 (576-) 992px */
+		@media (max-width: 992px) {
+			.color-block-text{
+				width: calc(90% - 80px);
+				flex-direction: column;
+			}
+
+			.color-block-text .title{
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+
+			.color-block-text .title h2,.color-block-text .title h3{
+				writing-mode: horizontal-tb;
+				margin: 0;
+			}
+
+			.color-block-text .title h2{
+				margin-bottom: 10px;
+			}
+
+			.color-block-text .leaf-btn-w {
+				align-self: center;
+				margin-top: 30px;
+			}
+		}
+	
+		/* 小型手機 576px 以下 */
+		@media (max-width: 576px) {
+			.color-block-text li a{
+				flex-direction: column;
+				width: 100%;
+			}
+
+			.color-block-text li:nth-last-child(1),.color-block-text li:nth-last-child(2){
+				display: none;
+			}
+
+		}
+
 	/* 聯繫我們 */
 	#contact {
 		background: url(./img/gradient-line.png);
 		background-position: bottom -40px right 0px;
 		background-size: 100% 90%;
-		padding: 150px;
+		padding: 150px 0;
 		background-repeat: no-repeat;
 	}
 
@@ -965,6 +1298,46 @@
 
 	#contact .leaf-btn-w {
 		filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.1));
+	}
+
+	/* 電腦 1401px */
+	@media (min-width: 1401px) {}
+
+	/* 電腦 (993-) 1400px */
+	@media (max-width: 1400px) {}
+
+	/* 平板 (576-) 992px */
+	@media (max-width: 992px) {
+		#contact{
+			padding: 50px 0 120px 0;
+		}
+		#contact .content{
+			width: 70%;
+			flex-direction: column;
+			text-align: center;
+			
+		}
+
+		#contact .content a{
+			margin-top: 70px;
+		}
+	}
+
+	/* 小型手機 576px 以下 */
+	@media (max-width: 576px) {
+		#contact .content .text h2{
+			font-size: 50px;
+			margin: 40px 0;
+		}
+
+		#contact .content .text h3{
+			font-size: 16px;
+		}
+
+		#contact .content .text p{
+			font-size: 18px;
+			line-height: 1.5em;
+		}
 	}
 
 	/* 頁尾 */
@@ -1046,7 +1419,6 @@
 	footer .content img {
 		object-fit: contain;
 		width: 220px;
-
 	}
 
 	footer .center {
@@ -1074,6 +1446,51 @@
 
 	footer .serif-medium-footer a:nth-child(odd) {
 		margin-right: 60px;
+	}
+
+	/* 電腦 1401px */
+	@media (min-width: 1401px) {}
+
+	/* 電腦 (993-) 1400px */
+	@media (max-width: 1400px) {}
+
+	/* 平板 (576-) 992px */
+	@media (max-width: 992px) {
+		footer .content{
+			margin: 0 auto;
+			width: 90%;
+		}
+		
+		footer .bg{
+			left: 0;
+		}
+	}
+
+	/* 小型手機 576px 以下 */
+	@media (max-width: 576px) {
+		footer{
+			height: 450px;
+		}
+
+		footer .content{
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		footer .content>img{
+			width: 100px;
+			order: 0;
+		}
+
+		footer .content .center{
+			align-self: center;
+			order: 3;
+		}
+
+		footer .content .serif-medium-footer{
+			margin: 30px 0;
+		}
 	}
 
 
@@ -1336,7 +1753,7 @@
 
 	/* RWD 斷點 */
 
-	/* 電腦 1401px 以上 */
+	/* 電腦 1401px */
 	@media (min-width: 1401px) {}
 
 	/* 電腦 (993-) 1400px */
@@ -1347,14 +1764,3 @@
 
 	/* 小型手機 576px 以下 */
 	@media (max-width: 576px) {}
-
-	.test{
-		width: 1000px;
-		height: 1000px;
-		background: var(--gradient);
-		backdrop-filter: blur(10px);
-		position: fixed;
-		right: 0;
-		top: 20px;
-		z-index: 999;
-	}
